@@ -25,7 +25,8 @@ Grey dark 3: #999
   --color-grey-80: hsl(0, 0%, 80%);
   --color-grey-60: hsl(0, 0%, 60%);
   --color-grey-47: hsl(0, 0%, 47%);
-  --color-grey-20: hsl(0, 0%, 20%); }
+  --color-grey-20: hsl(0, 0%, 20%);
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3); }
 
 *,
 *::after,
@@ -47,3 +48,41 @@ body {
   background-size: cover;
   background-repeat: no;
   min-height: 100vh; }
+
+.logo {
+  height: 3.25rem; }
+
+.search__icon {
+  height: 2rem;
+  width: 2rem; }
+
+.user-nav__icon {
+  height: 2.25rem;
+  width: 2.25rem; }
+
+.user-nav__user-photo {
+  height: 3.75rem;
+  border-radius: 50%; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-grey-98);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem; }
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color-grey-95); }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background-color: var(--color-grey-20);
+  flex: 0 0 18%; }
+
+.hotel-view {
+  background-color: #fff;
+  flex: 1; }
