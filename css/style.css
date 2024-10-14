@@ -15,9 +15,35 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 */
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #FF3366;
+  --color-primary-dark: #BA265D;
+  --color-grey-98: hsl(0, 0%, 98%);
+  --color-grey-95: hsl(0, 0%, 95%);
+  --color-grey-94: hsl(0, 0%, 94%);
+  --color-grey-80: hsl(0, 0%, 80%);
+  --color-grey-60: hsl(0, 0%, 60%);
+  --color-grey-47: hsl(0, 0%, 47%);
+  --color-grey-20: hsl(0, 0%, 20%); }
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: var(--color-grey-47);
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+  background-size: cover;
+  background-repeat: no;
+  min-height: 100vh; }
