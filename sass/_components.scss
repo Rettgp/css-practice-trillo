@@ -1,21 +1,60 @@
 .logo {
     height: 3.25rem;
+    margin-left: 3rem;;
 }
 
 .search {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &__input {
+        width: 90%;
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        padding: .7rem 2rem;
+        background-color: var(--color-grey-95);
+        border: none;
+        border-radius: 100px;
+        transition: all .2s;
+        margin-right: -3.25rem;
 
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-94);
+        }
+
+        &::placeholder {
+            font-weight: 100;
+            color: var(--color-grey-80);
+        }
     }
+
     &__btn {
+        border: none;
+        background-color: transparent;
 
+        &:focus {
+            outline: none;
+        }
+        &:active {
+            transform: translateY(2px);
+        }
     }
+
     &__icon {
         height: 2rem;
         width: 2rem;
+        fill: var(--color-grey-60);
     }
 }
 
 .user-nav {
+    display: flex;
+
     &__icon-box {
 
     }
